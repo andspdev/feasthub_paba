@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home"
+        android:icon="@drawable/house_light"/>
+
+    <item
+        android:id="@+id/wishlists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Wishlists"
+        android:icon="@drawable/heart_light"/>
+
+    <item
+        android:id="@+id/transaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Transaction"
+        android:icon="@drawable/clipboard_list_check_light"/>
+
+    <item
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Profile"
+        android:icon="@drawable/circle_user_light"/>
+</menu>

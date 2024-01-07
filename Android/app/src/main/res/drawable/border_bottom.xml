@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color (optional) -->
+    <item android:drawable="@android:color/white" />
+
+    <!-- Content area -->
+    <item android:top="-2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+
+    <!-- Border bottom -->
+    <item android:top="-2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#fff" />
+            <padding android:bottom="2dp" />
+        </shape>
+    </item>
+</layer-list>

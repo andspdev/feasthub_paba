@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/border_radius_list"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/imgThumbnailCart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvJudulCart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Ini merupakan Judul Item"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeleteItem"
+        app:layout_constraintStart_toEndOf="@+id/imgThumbnailCart"
+        app:layout_constraintTop_toTopOf="@+id/imgThumbnailCart" />
+
+    <TextView
+        android:id="@+id/tvTotalItemCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="1 Barang"
+        app:layout_constraintStart_toStartOf="@+id/tvJudulCart"
+        app:layout_constraintTop_toBottomOf="@+id/tvJudulCart" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Total Price"
+        app:layout_constraintStart_toStartOf="@+id/imgThumbnailCart"
+        app:layout_constraintTop_toBottomOf="@+id/imgThumbnailCart" />
+
+    <TextView
+        android:id="@+id/tvTotalHargaCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Rp0"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <EditText
+        android:id="@+id/edQtCart"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:background="@drawable/input_border_radius_cart"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="0"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlusCart" />
+
+    <TextView
+        android:id="@+id/btnPlusCart"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/accentColor"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/edQtCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edQtCart" />
+
+    <TextView
+        android:id="@+id/btnMinCart"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/accentColor"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/edQtCart"
+        app:layout_constraintEnd_toStartOf="@+id/edQtCart"
+        app:layout_constraintTop_toTopOf="@+id/edQtCart" />
+
+    <ImageView
+        android:id="@+id/btnDeleteItem"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvJudulCart"
+        app:srcCompat="@drawable/trash_can_light" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<!-- res/drawable/button_selector.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- State when button is pressed or focused -->
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#2980b9"/> <!-- Warna latar belakang saat ditekan (hover) -->
+                    <corners android:radius="10dp"/> <!-- Radius sudut -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!-- Default state -->
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#3498db"/> <!-- Warna latar belakang normal -->
+                    <corners android:radius="10dp"/> <!-- Radius sudut -->
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+</selector>

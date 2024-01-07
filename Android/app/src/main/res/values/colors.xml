@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#333333</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="primaryColor">#FF9813</color>
+    <color name="primaryColorFade">#FFC77A</color>
+    <color name="accentColor">#FF9813</color>
+    <color name="colorStatusBarDetail">#1f1f1f</color>
+
+    <color name="track_colorActive">#FF4081</color>
+    <color name="track_colorInActive">#C0C0C0</color>
+    <color name="tickColorBlack">#00FFFFFF</color>
+    <color name="thumbColor">#ffc77a</color>
+
+</resources>
